@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio | Flávio Wilian</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Meu Portfólio</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#conhecimentos">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#projetos">Projetos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-center py-5" data-aos="fade-down">
+    <h1 class="display-4">Olá, eu sou <span class="text-danger">Flávio Wilian</span></h1>
+    <p class="lead">Desenvolvedor Web | Full Stack</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Sobre -->
+    <section id="sobre" class="my-5" data-aos="fade-up">
+      <h2>Sobre Mim</h2>
+      <p>Sou um desenvolvedor web focado em criar experiências dinâmicas, responsivas e eficientes. Tenho conhecimento sólido em front-end e back-end, com paixão por tecnologias modernas e escaláveis.</p>
+    </section>
+
+    <section id="conhecimentos" class="my-5" data-aos="fade-right">
+        <h2>Conhecimentos</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+      
+          <!-- Front-end Card -->
+          <div class="col">
+            <div class="card h-100 text-center skill-card" data-bs-toggle="collapse" data-bs-target="#frontEndCollapse" aria-expanded="false" aria-controls="frontEndCollapse">
+              <div class="card-body">
+                <i class="devicon-react-original colored fs-1 mb-3"></i>
+                <h5 class="card-title text-danger">Front-end</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Back-end Card -->
+          <div class="col">
+            <div class="card h-100 text-center skill-card" data-bs-toggle="collapse" data-bs-target="#backEndCollapse" aria-expanded="false" aria-controls="backEndCollapse">
+              <div class="card-body">
+                <i class="devicon-nodejs-plain colored fs-1 mb-3"></i>
+                <h5 class="card-title text-danger">Back-end</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Database Card -->
+          <div class="col">
+            <div class="card h-100 text-center skill-card" data-bs-toggle="collapse" data-bs-target="#dbCollapse" aria-expanded="false" aria-controls="dbCollapse">
+              <div class="card-body">
+                <i class="devicon-microsoftsqlserver-plain colored fs-1 mb-3"></i>
+                <h5 class="card-title text-danger">Database</h5>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      
+        <!-- Subcards Front-end -->
+        <div class="collapse mt-4" id="frontEndCollapse">
+          <div class="row row-cols-2 row-cols-md-4 g-3" data-aos="fade-up">
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-html5-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">HTML5</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-css3-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">CSS3</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-javascript-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">JavaScript</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-typescript-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">TypeScript</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-react-original colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">React</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-bootstrap-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">Bootstrap</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Subcards Back-end -->
+        <div class="collapse mt-4" id="backEndCollapse">
+          <div class="row row-cols-2 row-cols-md-4 g-3" data-aos="fade-up">
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-nodejs-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">Node.js</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-typescript-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">TypeScript</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-vuejs-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">Vue.js</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-delphi-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">Delphi</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Subcards Banco de Dados -->
+        <div class="collapse mt-4" id="dbCollapse">
+          <div class="row row-cols-2 row-cols-md-4 g-3" data-aos="fade-up">
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-mysql-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">MySQL</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-postgresql-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">PostgreSQL</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-microsoftsqlserver-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">SQL Server</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center skill-card h-100">
+                <div class="card-body">
+                  <i class="devicon-database-plain colored fs-2 mb-2"></i>
+                  <h6 class="text-danger">Firebird SQL</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Experiência Profissional -->
+    <section id="experiencia" class="my-5" data-aos="fade-left">
+      <h2>Experiência Profissional</h2>
+      <div class="card bg-dark text-white border border-secondary mt-4">
+        <div class="card-body">
+          <h4 class="card-title text-danger">OG1 Systems — Maceió</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Desde 2022 — Suporte Técnico e Desenvolvimento</h6>
+          <p class="card-text mt-3">
+            Atuando em múltiplas frentes da empresa com foco em:
+            <ul>
+              <li>💻 Suporte técnico computacional e infraestrutura</li>
+              <li>📦 Implantação e configuração de sistemas ERP</li>
+              <li>🌐 Desenvolvimento Web com <strong>React, Node.js, TypeScript</strong></li>
+              <li>📘 Conhecimento básico em <strong>Vue.js</strong> e <strong>Delphi</strong></li>
+              <li>🗄️ Manipulação de bancos de dados <strong>SQL Server</strong> e <strong>PostgreSQL</strong></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="my-5" data-aos="zoom-in">
+      <h2>Projetos</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+        <div class="col" data-aos="zoom-in-up">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Projeto 1</h5>
+              <p class="card-text">Aplicação web feita com HTML, CSS e JavaScript puro.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://github.com/seu-usuario/projeto1" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Projeto 2</h5>
+              <p class="card-text">Sistema CRUD com Node.js e Express.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://github.com/seu-usuario/projeto2" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Projeto 3</h5>
+              <p class="card-text">Sistema CRUD com Node.js e Express.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://github.com/seu-usuario/projeto2" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Projeto 4</h5>
+              <p class="card-text">Sistema CRUD com Node.js e Express.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://github.com/seu-usuario/projeto2" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Projeto 5</h5>
+              <p class="card-text">Sistema CRUD com Node.js e Express.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://github.com/seu-usuario/projeto2" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Projeto 6</h5>
+              <p class="card-text">Sistema CRUD com Node.js e Express.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://github.com/seu-usuario/projeto2" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="my-5" data-aos="fade-up">
+      <h2>Contato</h2>
+      <p>Entre em contato comigo pelo email: contato@seuemail.com</p>
+    </section>
+
+  </main>
+
+  <footer class="footer py-4 bg-dark text-center text-white mt-5">
+    <div class="container">
+      <p>&copy; 2025 — Flávio Wilian</p>
+    </div>
+  </footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
